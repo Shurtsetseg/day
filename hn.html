@@ -57,7 +57,7 @@
             <li class="flex items-start gap-3"><span>📞</span> <a id="phoneLink" class="underline decoration-dotted" href="#"></a></li>
           </ul>
           <div class="flex flex-wrap gap-3 pt-2">
-            <a id="rsvpLink" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-black text-white shadow hover:opacity-90">RSVP хийх</a>
+            <!-- <a id="rsvpLink" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-black text-white shadow hover:opacity-90">RSVP хийх</a> -->
             <a id="calendarLink" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-gray-900/90 text-white hover:bg-gray-900">Calendar-т нэмэх</a>
             <button id="shareBtn" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-gray-100 hover:bg-gray-200">Хуваалцах</button>
           </div>
@@ -86,7 +86,7 @@
   <script>
     // ⚙️ ТОХИРУУЛГА — эндээс өөрийн мэдээллээ солиорой
     const SETTINGS = {
-      hostName: "12 насны төрсөн өдөр",
+      hostName: "Сувданцэцэг",
       eventTitle: "Төрсөн өдрийн урилга",
       date: "2025-08-28", // YYYY-MM-DD
       time: "11:00",      // HH:mm (24 цаг)
@@ -96,7 +96,7 @@
       phone: "+976 9907-2127",
       rsvpLink: "https://forms.gle/", // эсвэл WhatsApp/FB event линк
       coverImage: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2400&auto=format&fit=crop",
-      note: "Жич: Smart casual ✨ Cake-cut 20:00 цагт.",
+      note: "Жич: Smart casual ✨ Cake-cut 12:00 цагт.",
       durationMins: 150
     };
 
@@ -139,8 +139,8 @@
     }).toString();
     calendarLink.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&${calParams}`;
 
-    // 🔗 RSVP
-    rsvpLink.href = SETTINGS.rsvpLink;
+    // // 🔗 RSVP
+    // rsvpLink.href = SETTINGS.rsvpLink;
 
     // 📤 Share API (fallback: clipboard)
     shareBtn.addEventListener('click', async () => {
